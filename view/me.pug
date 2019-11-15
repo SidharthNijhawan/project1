@@ -1,0 +1,19 @@
+section.Input.fadeInUp
+  h2 User Page
+  .container_spacing
+  .container__parent
+    video.bg-video__content(autoplay='' muted='' loop='')
+      source(src='Avocado.mp4' type='video/mp4')
+      |         Your browser is not supported
+    form.login
+      .entry
+        .entry-text
+          | Email
+        input(type='email' name='email' placeholder=`${user.email}` )
+      .entry
+        .entry-text
+          | Name
+        input(type = 'text' name='' placeholder=`${user.name}`)
+      
+      .btn-parent
+        button.btn.btn-full.form-button(type="submit") Login

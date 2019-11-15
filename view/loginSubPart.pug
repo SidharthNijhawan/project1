@@ -1,0 +1,20 @@
+section.Input.fadeInUp
+  h2 Login Page
+  .container_spacing
+  .container__parent
+    video.bg-video__content(autoplay='' muted='' loop='')
+      source(src='Avocado.mp4' type='video/mp4')
+      |         Your browser is not supported
+    form.login
+      .entry
+        .entry-text
+          | Email
+        input(type='email' name='email' placeholder='Your Email')
+      .entry
+        .entry-text
+          | Password
+        input(type = 'Password' name='' placeholder='********')
+      
+      .btn-parent
+        button.btn.btn-full.form-button(type="submit") Login
+    a(href="/forgetpassword") forget password
